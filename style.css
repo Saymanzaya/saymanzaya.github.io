@@ -1,0 +1,244 @@
+/* ===== Global Theme ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    color: #e5e7eb;
+}
+
+/* ===== Wrapper ===== */
+#wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.98),
+        rgba(2, 6, 23, 0.95)
+    );
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+/* ===== Header / Navigation ===== */
+#header {
+    background: linear-gradient(90deg, #06b6d4, #6366f1, #a855f7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+}
+
+a.button:hover {
+    background: #ffffff;
+    color: #020617;
+    transform: translateY(-2px);
+}
+
+/* ===== Content Layout ===== */
+#content {
+    display: flex;
+}
+
+/* Side Accent Bars */
+#leftEdge,
+#rightEdge {
+    width: 10px;
+    background: linear-gradient(180deg, #22d3ee, #a855f7);
+}
+
+/* ===== Page Content ===== */
+#pageContent {
+    flex: 1;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+/* ===== Headings ===== */
+#content h2 {
+    color: #22d3ee;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#content h3 {
+    color: #a855f7;
+    margin-top: 35px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+/* Animated divider under h3 */
+#content h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 6px;
+    background: linear-gradient(90deg, #22d3ee, #a855f7);
+    border-radius: 4px;
+}
+
+/* ===== Lists ===== */
+#pageContent ul {
+    list-style: none;
+    padding-left: 0;
+    max-width: 900px;
+}
+
+#pageContent li {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid #22d3ee;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#pageContent li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Course Project Images ===== */
+.project-img {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto 30px auto;
+    border-radius: 16px;
+    border: 2px solid #22d3ee;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+    box-shadow:
+        0 0 0 2px rgba(34, 211, 238, 0.6),
+        0 0 18px rgba(168, 85, 247, 0.6);
+}
+
+/* ===== Hobby Sections ===== */
+.hobby-section {
+    margin-bottom: 50px;
+}
+
+.hobby-images {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.hobby-img {
+    width: 25%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #22d3ee;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hobby-img:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 0 2px rgba(34, 211, 238, 0.6),
+        0 0 18px rgba(168, 85, 247, 0.6);
+}
+
+/* Hobby Text Box */
+.hobby-text {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid #22d3ee;
+    padding: 14px 18px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobby-text:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Footer ===== */
+#footer {
+    text-align: center;
+    font-size: 12px;
+    background: linear-gradient(90deg, #020617, #0f172a);
+    color: #94a3b8;
+    padding: 14px;
+}
+
+/* ===== Scrollbar (Chrome / Edge) ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#22d3ee, #a855f7);
+    border-radius: 10px;
+}
+
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 900px) {
+    #content {
+        flex-direction: column;
+    }
+
+    #leftEdge,
+    #rightEdge {
+        display: none;
+    }
+
+    .project-img,
+    .hobby-img {
+        width: 95%;
+    }
+}
+/* ===== Profile Image (Top Right) ===== */
+.profile-img {
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #22d3ee;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile fix */
+@media (max-width: 900px) {
+    .profile-img {
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+}
